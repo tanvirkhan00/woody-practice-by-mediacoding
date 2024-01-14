@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .th-row{
+            display: flex;
+            justify-content: space-between;
+            background-color: bisque;
+            height: 50px;
+            /* width:100%; */
+            align-items: center;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .th-left {
+            display: flex;
+        }
+        .th-right {
+            display: flex;
+            align-items: center;
+        }
+        .th-row p {
+            font-size: 20px;
+        }
+        .th-left .time {
+            padding-left: 20px;
+        }
+        .th-right .contact {
+            padding-right: 20px;
+        }
+        .th-right .fa-brands {
+            padding-right: 10px;
+        }
+
+        @media (max-width:1050px) {
+            .th-row {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        @media (max-width:850px) and (min-width:350px) {
+            .th-row p {
+               font-size: 15px; 
+            }
+        }
+        @media (max-width:640px) {
+            .th-row {
+                height:70px;
+                background-color: aquamarine;
+            }
+            .th-left {
+                flex-direction: column;
+            }
+            .th-right {
+                flex-direction: column;
+            }
+            .th-left .time {
+                padding-left:0;
+            }
+        }
+        @media (max-width:351px) {
+            .th-row p {
+                font-size: 12px;
+            }
+            .fa-brands {
+                font-size: 15px;
+                padding-right: 5px;
+            }
+        }
+
+/* End Top Header Section */
+
+        .h-row {
+            display: flex;
+            justify-content: space-between;
+            /* margin-top: 20px; */
+            height: 60px;
+            background-color:antiquewhite;
+            align-items: center;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        .h-right {
+            display: flex;
+            align-items: center;
+        }
+        .h-left h1 {
+            font-size: 30px;
+        }
+        .h-right .list ul {
+            display: flex;
+            padding-right: 20px;
+        }
+        .h-right .list ul li {
+            padding-right: 20px;
+            list-style: none;
+        }
+        .h-right ul li a {
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .h-right .button a {
+            text-decoration: none;
+            font-size: 20px;
+            background-color: black;
+            padding: 17px;
+            color: white;
+        }
+        
+        @media (max-width:1050px) {
+            .h-row {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        @media (max-width:850px) and (min-width:721px) {
+            .h-right ul li a {
+                font-size: 15px;
+            }
+            .h-right .button a {
+                font-size: 15px;
+                padding: 14px;
+            }
+        }
+        @media (max-width:720px) and (min-width:521px) {
+            .h-right .list ul li {
+                padding: 5px;
+            }
+            .h-left h1 {
+                font-size: 20px;
+            }
+            .h-right ul li a {
+                font-size: 12px;
+            }
+            .h-right .button a {
+                padding: 10px;
+                font-size: 12px;
+            }
+        }
+        @media (max-width:520px) {
+            .h-row {
+                height: 220px;
+                align-items:normal;
+                background-color: white;
+            }
+            .h-right {
+                flex-direction: column;
+                align-items: start;
+            }
+            .h-right ul{
+                flex-direction: column;
+            }
+            .h-right .button a{
+                padding: 10px;
+            }
+            .h-right .button {
+                padding-top: 15px;
+                text-align: center;
+            }
+            .h-left h1{
+                color: red;
+            }
+        }
+/* End Header Section */
+
+        .hiro_section {
+            background-image:linear-gradient(rgba(53, 53, 53, 0.7), rgba(53, 53, 53, 0.7)), url(/img/carousel-1.jpg);
+            height: 650px;
+            width: 100%;
+            background-size: cover;
+        }
+        .hi-wrap {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hi-wrap {
+            h3 {
+                margin-bottom: 15px;
+                font-size: 25px;
+                color: white;
+            }
+            h1 {
+                margin-bottom: 20px;
+                font-size: 60px;
+                font-weight: bold;
+                padding: 0 400px ;
+            }
+            p {
+                padding:0 300px; 
+                font-size: 20px;
+                line-height: 1.5;
+                color: white;
+                margin-bottom: 50px;
+            }
+            }
+            .hi-wrap .hi-link{
+                display: flex;
+            }
+            .hi-link a {
+                text-decoration: none;
+                /* padding-left: 40px; */
+                padding: 20px 40px;
+                background-color: aquamarine;
+                font-size: 18px;
+            }
+            .hi-link .hi-li-right {
+                margin-left: 20px;
+            }
+            .hi-link .hi-li-right a {
+                background-color: white;
+            }
+
+            @media (max-width:1300px) and (min-width:901px) {
+                .hi-wrap h1{
+                    padding: 0 200px;
+                }
+            }
+            @media (max-width:900px) and (min-width:621px) {
+                .hi-wrap h1 {
+                    font-size: 50px;
+                    padding: 0 100px;
+                }
+                .hi-wrap p {
+                    padding: 0 100px;
+                }
+                .hiro_section {
+                    height: 500px;
+                }
+            }
+            @media (max-width:620px) and (min-width:351px) {
+                .hi-wrap h3 {
+                    font-size: 20px;
+                }
+                .hi-wrap h1 {
+                    font-size: 30px;
+                    padding: 0 20px;
+                }
+                .hi-wrap p{
+                    padding: 0 20px;
+                    font-size: 17px;
+                }
+                .hi-link a{
+                    padding: 15px 20px;
+                }
+                .hiro_section {
+                    height: 400px;
+                }
+            }
+            @media (max-width:350px) {
+                .hiro_section {
+                    height: 350px;
+                }
+                .hi-wrap h3 {
+                    font-size: 18px;
+                    color: yellow;
+                }
+                .hi-wrap h1 {
+                    font-size: 25px;
+                    padding: 0 10px;
+                }
+                .hi-wrap p {
+                    font-size: 15px;
+                    padding: 0 5px;
+                }
+                .hi-link a {
+                    padding: 10px 15px;
+                    color: black;
+                }
+            }
+/* End Hiro Section */
+
+            .support_section{
+                margin-top: 30px;
+            }
+            .support-wrap {
+                height: 300px;
+            }
+            .sup-row {
+                display: flex; 
+                justify-content: space-between;
+                height: 100%;
+                align-items: center;
+                padding: 0 100px;
+            }
+            .sup-left {
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+            }
+            .sup-right {
+                display: flex;
+                justify-content: space-between;
+                width: 50%;
+            }
+            .sup-left .sup-designers {
+                width: 50%;
+            }
+            .sup-designers p {
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight:bolder;
+            }
+            .sup-left .sup-products {
+                width: 50%;
+            }
+            .sup-products p {
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight:bolder;
+            }
+            .sup-right .sup-consultation {
+                width: 50%;
+            }
+            .sup-consultation p {
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight:bolder;
+            }
+            .sup-right .sup-support {
+                width: 50%;
+            }
+            .sup-support p {
+                margin-top: 10px;
+                font-size: 20px;
+                font-weight:bolder;
+            }
+            .sup-logo {
+                display: flex;
+                justify-content:space-between;
+                padding-right: 40px;
+                font-size: 30px;
+                align-items: center;
+            }
+            .sup-logo p {
+                font-weight: bold;
+                color: lightblue;
+                font-size: 60px;
+            }
+            .sup-logo i {
+                padding: 15px 15px;
+                background-color: lightgrey;
+                color: chocolate;
+                font-size: 30px;
+            }
+
+            @media (max-width:1000px) and (min-width:501px)  {
+                .sup-row {
+                    padding: 0 10px;
+                    flex-direction: column;
+                    height: 300px;
+                    justify-content: center;
+                }
+                .sup-left {
+                    width: 100%;
+                }
+                .sup-right {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+            }
+            @media (max-width:500px) {
+                .support-wrap {
+                    height: 500px;
+                }
+                .sup-row {
+                    padding: 0 10px;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: start;
+                }
+                .sup-left {
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .sup-right {
+                    flex-direction: column;
+                    width: 100%;
+                }
+                .sup-left .sup-products {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+                .sup-products p {
+                    margin-top: 2px;
+                }
+                .sup-left .sup-designers {
+                    width: 100%;
+                }
+                .sup-designers p {
+                    margin-top: 2px;
+                }
+                .sup-right .sup-consultation {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+                .sup-consultation p {
+                    margin-top: 2px;
+                }
+                .sup-right .sup-support {
+                    width: 100%;
+                    margin-top: 10px;
+                }
+                .sup-support p {
+                    margin-top: 2px;
+                }
+            }
+    </style>
+</head>
+<body>
+    <section class="top-header">
+        <div class="th-row">
+            <div class="th-left">
+                <div class="location">
+                    <p>123 Street, New York, USA</p>
+                </div>
+                <div class="time">
+                    <p>Mon-Fri:09:00 AM-09:00 PM</p>
+                </div>
+            </div>
+            <div class="th-right">
+                <div class="contact">
+                    <p>+880 1959948542</p>
+                </div>
+                <div class="social-link">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Top-Header Section -->
+
+    <section class="header">
+        <div class="h-row">
+            <div class="h-left">
+                <h1>WooDY</h1>
+            </div>
+            <div class="h-right">
+                <div class="list">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SERVICE</a></li>
+                        <li><a href="#">PROJECT</a></li>
+                        <li><a href="#">PAGES</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="button">
+                    <a href="#">Get A quote </a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End Header Section -->
+
+    <section class="hiro_section">
+        <div class="hi-wrap">
+            <div class="hi-content">
+                <h3>WELCOME TO WOODY</h3>
+                <h1>Best Carpenter & Craftsman Services</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eum veritatis nemo cumque architecto, asperiores commodi? Eaque asperiores beatae dolor.</p>
+            </div>
+            <div class="hi-link">
+                <div class="hi-li-left">
+                    <a href="#">Read More</a>
+                </div>
+                <div class="hi-li-right">
+                    <a href="#">Free Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- End Hiro Section -->
+
+    <section class="support_section">
+        <div class="support-wrap">
+            <div class="sup-row">
+                <div class="sup-left">
+                    <div class="sup-designers">
+                        <div class="sup-logo">
+                            <i class="fa-solid fa-user-check"></i> 
+                            <p>01</p> 
+                        </div>
+                        <div class="sup-content">
+                            <p>Creative Designers</p>
+                        </div>
+                    </div>
+                    <div class="sup-products">
+                        <div class="sup-logo">
+                            <i class="fa-solid fa-check"></i> 
+                            <p>02</p> 
+                        </div>
+                        <div class="sup-content">
+                            <p>Quality Products</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sup-right">
+                    <div class="sup-consultation">
+                        <div class="sup-logo">
+                            <i class="fa-solid fa-compass-drafting"></i> 
+                            <p>03</p> 
+                        </div>
+                        <div class="sup-content">
+                            <p>Free Consultation</p>
+                        </div>
+                    </div>
+                    <div class="sup-support">
+                        <div class="sup-logo">
+                            <i class="fa-solid fa-headphones-simple"></i> 
+                            <p>04</p> 
+                        </div>
+                        <div class="sup-content">
+                            <p>Customar Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://kit.fontawesome.com/862c32b35b.js" crossorigin="anonymous"></script>
+</body>
+</html>
